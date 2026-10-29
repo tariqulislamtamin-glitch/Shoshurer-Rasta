@@ -1,0 +1,11 @@
+শ্বশুরের রাস্তা APK বানানোর নিয়ম (শুধু Android মোবাইল দিয়ে)
+
+১) GitHub.com-এ অ্যাকাউন্ট খুলুন/লগইন করুন।
+২) New repository তৈরি করুন, নাম দিন Shoshurer-Rasta, Public বা Private যেকোনোটি।
+৩) এই ZIP ফাইলটি ফোনে Extract করুন। ZIP-এর ভেতরের সব ফাইল (লুকানো .github ফোল্ডারসহ) GitHub repository-তে upload করতে হবে।
+   সহজ উপায়: GitHub ওয়েবসাইটে Add file > Upload files। যদি .github ফোল্ডার দেখা না যায়, GitHub-এ .github/workflows/build-apk.yml ফাইলটি আলাদা করে তৈরি করুন এবং ZIP-এর ওই ফাইলের লেখা কপি করুন।
+৪) Upload/commit শেষ হলে repository-র Actions ট্যাবে যান। “Build Shoshurer Rasta APK” workflow নির্বাচন করে Run workflow চাপুন (push-এও build শুরু হতে পারে)।
+৫) Build শেষ হলে সবুজ টিক দেওয়া run খুলুন। নিচের Artifacts অংশ থেকে Shoshurer-Rasta-APK ডাউনলোড করুন।
+৬) ডাউনলোড করা ZIP খুলে app-debug.apk বের করুন। APK-তে চাপ দিয়ে Install করুন। Android চাইলে Settings থেকে ওই browser/file manager-এর “Install unknown apps” অনুমতি দিন। শুধু নিজের তৈরি APK-ই ইনস্টল করুন।
+
+নোট: এটি debug APK; Play Store-এ প্রকাশের জন্য signed release build আলাদা ধাপ। GitHub-এর UI ফোনে কিছুটা কঠিন হতে পারে।
